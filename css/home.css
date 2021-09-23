@@ -1,0 +1,392 @@
+html {
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    --firstColor-color:#1d3557;
+    --secondColor-color:#fec89a;
+    font-size: max(1.25vw,17px) ;
+
+
+}
+
+
+body{
+    font-family: 'Hahmlet', serif;
+}
+
+
+.navbar {
+    position: relative;
+    background: linear-gradient(
+        45deg
+        , var( --firstColor-color) 40%, var( --secondColor-color) 60% );
+    padding: 0.6rem 0px;
+
+    /* navbar */
+
+}
+
+
+
+.navbar-nav{
+
+    display: flex;
+    justify-content: space-around;
+    
+    /* groupping services about/contact  anchors */
+}
+
+.nav-link{
+
+    color:white;
+    transition: color 1s  ,border-bottom 2s ;
+    margin: 0 0.7rem;
+    /* navbars anchors */
+
+}
+
+.nav-link:hover{
+
+    color:var( --secondColor-color) ;
+    border-bottom: var( --secondColor-color) 2px solid ;
+    border-bottom-left-radius:10% ;
+    border-bottom-right-radius:10% ;
+    /* navbar  anchors hovering  */
+}
+
+
+
+.carousel-item{
+    opacity: 0;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    font-size: inherit;
+    /* img and content inside each carousel */
+
+}
+
+.carousel-item img {
+
+    position: relative;
+    filter:brightness(75%);
+    width: 100%;
+    height: 600px;
+    /* carousel img */
+}
+
+
+.carousel-item .content-slider{
+
+    font-size: 1.1rem;
+    color: white;
+    width: 90%;
+    position: absolute;
+    text-align: right;
+    height: 100%;
+    top: 8rem;
+    /* carousel content */
+    
+}
+.carousel-item .content-slider h2{
+
+    color: var( --secondColor-color) ;
+}
+
+.carousel-item .content-slider a {
+
+    text-align: center;
+    display: inline-block;
+    font-size: inherit;
+    box-sizing: border-box;
+    color: white;  
+    text-decoration: none;
+    background-color: var( --firstColor-color) ;  
+    border: var( --firstColor-color)  2px solid ;
+    border-bottom-left-radius: 2em ;
+    border-top-right-radius: 2em ;
+    padding: 2px 20px;
+    max-height: 40px;
+    width: 11em;
+    transition: color 1s ,transform 0.25s,box-shadow 0.25s;
+    /* anchor tag inside carousel */
+    
+}
+
+.carousel-item .content-slider a:hover{
+    color: var( --secondColor-color);    
+    transform: translateY(-0.30rem);
+    box-shadow:0.5rem 0.5rem 1rem -0.1rem var( --secondColor-color);
+    /* anchor tag inside carousel */
+
+}
+
+.carousel-control-prev-icon{
+    width: 50px;
+    background-color: var( --firstColor-color);
+    border:  var( --firstColor-color) 2px solid;
+    border-radius: 50%;
+    height: 50px;
+
+        /* prev icon in carousel*/
+
+
+}
+
+.carousel-control-next-icon{
+
+    width: 50px;
+    height: 50px;
+    background-color:  var( --firstColor-color);
+    border:  var( --firstColor-color) 2px solid;
+    border-radius: 50%;
+
+    /* next icon in carousel*/
+
+}
+
+
+/* why us */
+
+.Design-H1s{
+    margin-block: 100px;
+    color:  var( --firstColor-color);
+    /* why us h1 tag  */
+}
+
+
+#whyUs-container{
+    
+    font-size: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    /* why us container */
+
+}
+
+#whyUs-container .content-whyUs{
+    
+    background-color:  var( --firstColor-color);
+    font-size: 1rem;
+    width: 30%;
+    height: 18rem;
+    clip-path: inset(1% round 100px);
+    color: white;
+    /* eah div inside why us container  */
+}
+
+
+
+.content-whyUs p {
+    font-size: 1rem;
+}
+#whyUs-container .content-whyUs h3{
+    color:  var( --secondColor-color)
+}
+
+.content-whyUs img {
+    margin-block: 10px;
+    width: 4rem;
+    height: 80px;
+    /* img inside why us content */
+    
+}
+
+@media (max-width:650px){
+
+    #whyUs-container{
+    
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        /* why us container */
+    
+    }
+
+    #whyUs-container .content-whyUs{
+    
+        background-color:  var( --firstColor-color);
+        font-size: 1rem;
+        width: 70%;
+        clip-path: inset(1% round 100px);
+        height: 15rem;
+        color: white;
+        margin-block: 10px;
+        /* eah div inside why us container  */
+    }
+    
+    
+}
+
+/* services */
+
+#services{
+
+    font-size: inherit;
+    display: flex;
+    background-color: var( --secondColor-color);
+    margin-block: 40px ;
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    /* services container */
+}
+
+#services div:nth-of-type(1){
+    width: 40%; 
+    color: white;
+    height: 70%;
+    background-color: var( --firstColor-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* div 1 inside services container */
+}
+
+#services div:nth-of-type(1) ul {
+
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+
+
+#services div:nth-of-type(2){
+    width: 60%;
+    background-color: var( --firstColor-color);
+    display: flex;
+    justify-content:flex-start;
+
+    /* div 2 inside services container */
+}
+
+#services div:nth-of-type(2) #image1{
+    position: relative;
+    margin-inline:auto ;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../imgs/photo-1627514818551-db74fc995e9b.jfif') ;
+    background-position:center;
+    background-repeat: no-repeat;
+     /* img1 inside div2 */
+
+}
+#services-btn{
+    font-size: max(1.5vw,0.85em);
+    text-align: center;
+    color: white;  
+    text-decoration: none;
+    background-color: var( --firstColor-color) ;  
+    border:  var( --firstColor-color) 2px solid ;
+    border-radius: 0 0 30% 30%;
+    margin-inline:auto ;
+    height:50px;
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    transition: background-color 1s ,transform 0.25s,box-shadow 0.25s;
+    /* anchor tag inside div 1 */
+}
+
+#services-btn:hover{
+
+     background: linear-gradient(
+        45deg
+        ,  var( --secondColor-color) 10%,  var( --firstColor-color) 60% );
+    transform: translateY(-0.30em);
+    box-shadow: 0.5rem 0.5rem 1rem -0.1rem  var( --secondColor-color);
+}
+
+#services div:nth-of-type(2) #image2{
+  
+    margin-inline:auto ;
+    border-radius: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url('../imgs/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg') ;
+    background-position:center;
+    background-repeat: no-repeat;
+     /* img 2 inside div 2 */
+
+}
+
+/* footer */
+
+
+.footerX {
+    margin-top: 250px;
+    background:  var( --firstColor-color);
+    color: white;
+  
+}
+
+.colorX{
+    color:white;
+}
+
+/* explore anchors */
+
+.link a{
+    text-decoration: none;
+    color:white;
+    transition: color 1s,border-bottom 2s;
+  
+}
+
+.link a:hover{
+    color:  var( --secondColor-color);
+    border-bottom: var( --secondColor-color) 2px solid ;
+   border-radius:  0 0 10% 10%;
+
+}
+
+
+small {
+    font-size: calc(15px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+/* adjust font size of emails and icons */
+
+}
+
+.bold-text {
+    color: var( --secondColor-color) !important
+    /* main headings */
+}
+#emails{
+    margin-block:5px ;
+    list-style-type: none;
+   
+/* emails UL */
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    /* h3 tag for AME */
+}
+
+.social {
+    font-size: 21px !important
+    /* social icons as facebook etc */
+}
+
+.rights {
+    font-size: calc(15px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    /* rights reserved Paragraph */
+}
+
+
+
+

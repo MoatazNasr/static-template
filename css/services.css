@@ -1,0 +1,256 @@
+html {
+    
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: max(1.25vw,17px) ;
+
+    
+   
+}
+
+
+body{
+    font-family: 'Hahmlet', serif;
+    --firstColor-color:#1d3557;
+    --secondColor-color:#fec89a;
+
+}
+
+
+.navbar {
+    position: relative;
+    background: linear-gradient(
+        45deg
+        , var( --firstColor-color) 40%, var(--secondColor-color) 60% );
+    padding: 0.6em 0px;
+
+    /* navbar */
+
+}
+
+
+
+.navbar-nav{
+
+    display: flex;
+    justify-content: space-around;
+    
+    /* groupping services about/contact  anchors */
+}
+
+.nav-link{
+
+    color:white;
+    transition: color 1s  ,border-bottom 2s ;
+    margin: 0 0.7em;
+    /* navbars anchors */
+
+}
+
+.nav-link:hover{
+
+    color:var(--secondColor-color) ;
+    border-bottom: var(--secondColor-color) 2px solid ;
+    border-bottom-left-radius:10% ;
+    border-bottom-right-radius:10% ;
+    
+    
+    
+    
+    /* navbar  anchors hovering  */
+}
+/* services details */
+    
+.Design-H1s {
+    margin-block: 100px;
+    color:  var( --firstColor-color);
+}
+
+
+
+#services {
+
+    background-image:url('../imgs/2274415.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter:brightness(100%);
+    width: 100%;
+    display: grid;
+    margin-block: 100px;
+    grid-template-columns: repeat(3,25%);
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+    
+}
+
+#overlay {
+	background:rgba(0, 0, 0, 0.4) url("../imgs/pattern.png") repeat;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.services-type {
+    margin-block: 20px;
+    height: 500px;
+    color: var(--secondColor-color);
+    border: var(--firstColor-color) 2px solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(70px);
+    overflow: hidden;
+
+}
+.services-type #service-icon {    
+    width: 100px;
+    height: 80px;
+    position: relative;
+    z-index: auto;
+   
+}
+
+.services-type h2{
+
+    padding: 10px;
+    border-bottom: var(--firstColor-color) 2px solid;
+    position: relative;
+    top: 30px;
+
+    }
+
+.services-type::before{
+
+    content:"";
+    background: linear-gradient(to top ,#1d3557 20%,#fec89a);   
+    width: 100%;
+    height:200px;
+    position: absolute;
+    top: 0;
+    left: 0px; 
+    clip-path: circle(280px at 50% -48.5%);
+
+}
+
+.services-type p{
+
+    color: white ;
+      
+} 
+
+@media  (max-width: 900px) {
+
+    
+#services {
+
+  
+    filter:brightness(100%);
+    width: 100%;
+    display: grid;
+    margin-block: 100px;
+    grid-template-columns: repeat(2,40%);
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+    
+}
+
+    
+}
+
+
+@media  (max-width: 550px) {
+
+    
+    #services {
+    
+        /* background-image:url('../imgs/HD\ wallpaper_\ macbook\,\ minimal\,\ dark\,\ wallpaper\,\ laptop\,\ desktop\,\ office.jfif');
+        background-repeat: no-repeat;
+        background-size:cover; */
+        filter:brightness(100%);
+        width: 100%;
+        display: grid;
+        margin-block: 100px;
+        grid-template-columns: repeat(1,80%);
+        justify-content: center;
+        align-items: center;
+        gap: 0 40px;
+        
+    }
+    
+        
+    }
+    
+
+
+/* footer */
+
+
+.footerX {
+    margin-top: 250px;
+    background: var(--firstColor-color);
+    color: white;
+  
+}
+
+.colorX{
+    color:white;
+}
+
+/* explore anchors */
+
+.link a{
+    text-decoration: none;
+    color:white;
+    transition: color 1s,border-bottom 2s;
+  
+}
+
+.link a:hover{
+    color: var(--secondColor-color);
+    border-bottom:var(--secondColor-color) 2px solid ;
+   border-radius:  0 0 10% 10%;
+
+}
+
+
+small {
+    font-size: calc(15px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+/* adjust font size of emails and icons */
+
+}
+
+.bold-text {
+    color: var(--secondColor-color)!important
+    /* main headings */
+}
+#emails{
+    margin-block:5px ;
+    list-style-type: none;
+   
+/* emails UL */
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    /* h3 tag for AME */
+}
+
+.social {
+    font-size: 21px !important
+    /* social icons as facebook etc */
+}
+
+.rights {
+    font-size: calc(15px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    /* rights reserved Paragraph */
+}
